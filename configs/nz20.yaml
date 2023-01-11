@@ -1,0 +1,26 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
+
+files:
+  image_path: S:/Slides/SegmentationMultiScanner/BVM
+  annotation_file: S:/Slides/SegmentationMultiScanner/BVM/scc.json
+
+data:
+  patch_size: 512
+  batch_size: 8
+  level: 0
+  patches_per_slide: 10
+  mean: 0.77,0.63,0.74
+  std: 0.05,0.09,0.05
+
+training:
+  scanner: nz20
+  seed: 42
+  lr: 1e-4
