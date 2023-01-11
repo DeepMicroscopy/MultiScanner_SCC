@@ -9,8 +9,8 @@ hydra:
     dir: .
 
 files:
-  image_path: S:/Slides/SegmentationMultiScanner/BVM
-  annotation_file: S:/Slides/SegmentationMultiScanner/BVM/scc.json
+  image_path: images
+  annotation_file: images/scc.json
 
 data:
   patch_size: 512
