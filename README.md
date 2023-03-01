@@ -12,11 +12,11 @@ cutaneous squamous cell carcinoma (SCC). The dataset can be downloaded on
 scanning systems:
 
 <p float="left">
-  <img src="aperio.png" width="195" alt="Aperio ScanScope CS2"/>
-  <img src="nz210.png" width="195" alt="NanoZoomer S210"/>
-  <img src="nz2.png" width="195" alt="NanoZoomer 2.0-HT "/>
-  <img src="3dhistech.png" width="195" alt="Pannoramic 1000"/>
-  <img src="leica.png" width="195" alt="Aperio GT 450"/>
+  <img src="aperio.png" width="175" alt="Aperio ScanScope CS2"/>
+  <img src="nz210.png" width="175" alt="NanoZoomer S210"/>
+  <img src="nz2.png" width="175" alt="NanoZoomer 2.0-HT "/>
+  <img src="3dhistech.png" width="175" alt="Pannoramic 1000"/>
+  <img src="leica.png" width="175" alt="Aperio GT 450"/>
 </p>
 
   
