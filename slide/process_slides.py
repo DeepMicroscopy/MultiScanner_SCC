@@ -19,7 +19,7 @@ def load_slides(patch_size=256, label_dict=None, level = None, image_path =None,
 
     slides = pd.read_csv('scc_dataset.csv', delimiter=";")
     for index, row in tqdm(slides.iterrows()):
-        image_file = Path(glob.glob("{}/{}_{}.tif".format(str(image_path), row["Slide"], scanner), recursive=True)[0])
+        image_file = Path(glob.glob("{}/**/{}_{}.tif".format(str(image_path), row["Slide"], scanner), recursive=True)[0])
         if row["Dataset"] == "train":
             train_files.append(SlideContainer(image_file, annotation_file, level, patch_size, patch_size, label_dict = label_dict))
         elif row["Dataset"] == "val":
