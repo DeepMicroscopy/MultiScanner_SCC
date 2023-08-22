@@ -102,9 +102,9 @@ class SlideContainer:
         inv_map = {v: k for k, v in self.tissue_classes.items()}
         # use passed sampling method
         if callable(self.sample_func):
-            return self.sample_func(self.polygons, **{"classes":self.labels ,"size": self.shape,
-                                               "level_dimensions": self.source_slide.level_dimensions,
-                                               "level": self.level})
+            return self.sample_func(self.polygons, **{"classes":self.labels ,"size": (self.width, self.height),
+                                               "level_dimensions": self.slide.level_dimensions,
+                                               "level": self._level})
         # Sample class label according to class probabilities
         label = random.choices(list(self.probabilities.keys()), list(self.probabilities.values()))[0]
 
